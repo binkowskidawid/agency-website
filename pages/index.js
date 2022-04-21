@@ -7,7 +7,7 @@ import Main from "../components/Main";
 
 export default function Home() {
 	return (
-		<div className="wrapper">
+		<div className="wrapper w-full">
 			<Navigation/>
 			<Header />
 			<Main/>
