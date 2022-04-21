@@ -9,7 +9,7 @@ export default function Header() {
 			scroll-smooth"
 			>
 				<div className="stars w-full md:w-[65%] h-10 md:h-20 absolute top-12 left-0 bg-[url('/images/stars.png')] bg-center bg-contain mix-blend-lighten"></div>
-				<div className="flex flex-col md:flex-row items-center justify-around pt-28 md:pt-40 pb-10 px-16">
+				<div className="flex flex-col md:flex-row items-center justify-around pt-16 md:pt-40 pb-10 px-6 md:px-16">
 					<div>
 						<Image
 							className="cursor-pointer"

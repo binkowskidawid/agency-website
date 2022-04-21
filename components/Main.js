@@ -3,13 +3,15 @@ import Image from "next/image";
 export default function Main() {
 	return (
 		<main
-		id="about"
+			id="about"
 			className="l-header w-full min-h-full absolute top-full left-0 bg-top  bg-gradient-to-b from-[#764ba2] to-[#667eea]
         scroll-smooth"
 		>
-			<div className="flex flex-col md:flex-row items-center justify-around pt-20 md:pt-28 pb-10 px-16">
+			<div className="flex flex-col md:flex-row items-center justify-around pt-20 md:pt-28 pb-10 px-6 md:px-16">
 				<div className="flex flex-col flex-1 items-start justify-around text-white">
-					<h3 className="text-4xl md:text-5xl font-bold pb-4">About Us</h3>
+					<h3 className="text-4xl md:text-5xl font-bold pb-4">
+						About Us
+					</h3>
 					<p className="pl-8">
 						Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Ipsam incidunt molestiae facere, et libero
@@ -22,9 +24,9 @@ export default function Main() {
 						doloremque eveniet saepe maxime officia quasi?
 					</p>
 					<div className="pl-8">
-					<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider">
-						Read more...
-					</button>
+						<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider">
+							Read more...
+						</button>
 					</div>
 				</div>
 				<div className="">
