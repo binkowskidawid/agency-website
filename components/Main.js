@@ -4,7 +4,7 @@ export default function Main() {
 	return (
 		<main
 			id="about"
-			className="l-header w-full min-h-full absolute top-full left-0 bg-top  bg-gradient-to-b from-[#764ba2] to-[#667eea]
+			className="l-header w-full pb-8 bg-top bg-gradient-to-b from-[#764ba2] to-[#667eea]
         scroll-smooth"
 		>
 			<div className="flex flex-col md:flex-row items-center justify-around pt-20 md:pt-28 pb-10 px-6 md:px-16">
@@ -33,7 +33,7 @@ export default function Main() {
 					<Image
 						className="cursor-pointer"
 						src="/images/innovation-team-about.png"
-						alt="Bilion Agency Logo"
+						alt="About us"
 						width={350}
 						height={350}
 						quality={100}

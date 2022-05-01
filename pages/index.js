@@ -4,13 +4,15 @@
 import Navigation from "../components/Navigation";
 import Header from "../components/Header";
 import Main from "../components/Main";
+import Facilities from "../components/Facilities";
 
 export default function Home() {
 	return (
 		<div className="wrapper w-full">
-			<Navigation/>
+			<Navigation />
 			<Header />
-			<Main/>
+			<Main />
+			<Facilities />
 		</div>
 	);
 }

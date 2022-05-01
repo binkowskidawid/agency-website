@@ -4,6 +4,8 @@ import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 export default function Navigation() {
+	const menuHrefAttr = ["home", "about", "learning", "contact"];
+
 	const [openMenu, setOpenMenu] = useState(false);
 	const handleClickOnMobileMenuIcon = () => setOpenMenu(!openMenu);
 	const closeMobileMenu = () => setOpenMenu(false);
@@ -34,42 +36,20 @@ export default function Navigation() {
 				id="nav-menu"
 			>
 				<ul className="nav__list md:flex md:justify-end md:mr-4">
-					<li className="nav__item mb-8 md:ml-8 md:mb-0">
-						<a
-							href="#home"
-							className="nav__link relative hover:text-blue-500 transition duration-300"
-							onClick={closeMobileMenu}
+					{menuHrefAttr.map((href) => (
+						<li
+							className="nav__item mb-8 md:ml-8 md:mb-0"
+							key={href}
 						>
-							Home
-						</a>
-					</li>
-					<li className="nav__item mb-8 md:ml-8 md:mb-0">
-						<a
-							href="#about"
-							className="nav__link relative hover:text-blue-500 transition duration-300"
-							onClick={closeMobileMenu}
-						>
-							About Us
-						</a>
-					</li>
-					<li className="nav__item mb-8 md:ml-8 md:mb-0">
-						<a
-							href="#learning"
-							className="nav__link relative hover:text-blue-500 transition duration-300"
-							onClick={closeMobileMenu}
-						>
-							Learning
-						</a>
-					</li>
-					<li className="nav__item mb-8 md:ml-8 md:mb-0">
-						<a
-							href="#contact"
-							className="nav__link relative hover:text-blue-500 transition duration-300"
-							onClick={closeMobileMenu}
-						>
-							Contact
-						</a>
-					</li>
+							<a
+								href={`#${href}`}
+								className="nav__link relative hover:text-blue-500 transition duration-300"
+								onClick={closeMobileMenu}
+							>
+								{href.charAt(0).toUpperCase() + href.slice(1)}
+							</a>
+						</li>
+					))}
 				</ul>
 			</div>
 			<div
