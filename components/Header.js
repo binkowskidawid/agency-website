@@ -21,10 +21,10 @@ export default function Header() {
 						/>
 					</div>
 					<div className="flex flex-col items-center justify-center text-white text-center">
-						<span className="md:text-2xl">Our ROAR is</span>
 						<h3 className="text-4xl md:text-7xl font-bold">
 							YOUR GROWTH
 						</h3>
+						<span className="md:text-2xl">is Our ROAR</span>
 						<button className="mt-12 py-4 px-8 bg-fuchsia-600 rounded text-lg font-bold tracking-wider">
 							EXPLORE
 						</button>
