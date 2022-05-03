@@ -30,8 +30,8 @@ export default function Navigation() {
 			<div
 				className={
 					openMenu
-						? "nav__menu show__menu fixed md:static top-12 md:top-0 right-0 w-full h-full text-white text-2xl md:text-[1rem] p-16 md:p-2 text-center bg-[#380D6B] md:bg-transparent ease-out duration-500 md:duration-[0ms] md:transition-none backdrop-blur md:backdrop-blur-none"
-						: "nav__menu fixed md:static top-12 md:top-0 -right-full md:right-0 w-full h-full text-white text-2xl md:text-[1rem] p-16 md:p-2 text-center bg-[#380D6B] md:bg-transparent ease-out duration-500 md:duration-[0ms] md:transition-none backdrop-blur md:backdrop-blur-none"
+						? "nav__menu show__menu fixed md:static top-12 md:top-0 right-0 w-full h-full text-white text-2xl md:text-[1.25rem] p-16 md:p-2 text-center bg-[#380D6B] md:bg-transparent ease-out duration-500 md:duration-[0ms] md:transition-none backdrop-blur md:backdrop-blur-none font-['Antic_Didone']"
+						: "nav__menu fixed md:static top-12 md:top-0 -right-full md:right-0 w-full h-full text-white text-2xl md:text-[1.25rem] p-16 md:p-2 text-center bg-[#380D6B] md:bg-transparent ease-out duration-500 md:duration-[0ms] md:transition-none backdrop-blur md:backdrop-blur-none font-['Antic_Didone']"
 				}
 				id="nav-menu"
 			>

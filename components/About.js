@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Main() {
+export default function About() {
 	return (
 		<main
 			id="about"
@@ -9,10 +9,10 @@ export default function Main() {
 		>
 			<div className="flex flex-col md:flex-row items-center justify-around pt-20 md:pt-28 pb-10 px-6 md:px-16">
 				<div className="flex flex-col flex-1 items-start justify-around text-white">
-					<h3 className="text-4xl md:text-5xl font-bold pb-4">
+					<h3 className="text-4xl md:text-5xl font-bold pb-4 font-['Antic_Didone']">
 						About Us
 					</h3>
-					<p className="pl-8">
+					<p className="pl-8 font-['Antic_Didone']">
 						Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Ipsam incidunt molestiae facere, et libero
 						provident eaque id quas porro perferendis? Nesciunt nam

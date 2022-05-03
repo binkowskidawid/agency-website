@@ -13,12 +13,18 @@ export default function Facilities() {
 			name: "Advanced Library",
 			text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit unde tempore aliquid voluptatibus earum natus eos aspernatur ratione perferendis cum. Consectetur quis illo quaerat commodi repellendus reiciendis totam alias molestiae.",
 			buttonHref: "#"
+		},
+		{
+			imageUrl: "/images/science-zones.png",
+			name: "Science zones",
+			text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit unde tempore aliquid voluptatibus earum natus eos aspernatur ratione perferendis cum. Consectetur quis illo quaerat commodi repellendus reiciendis totam alias molestiae.",
+			buttonHref: "#"
 		}
 	];
 
 	return (
-		<section id="about" className="l-header w-full scroll-smooth">
-			<h3 className="text-4xl md:text-5xl font-bold pb-4 px-6 md:px-16 pt-10 md:pt-16 text-[#380D6B]">
+		<section id="about" className="l-header w-full scroll-smooth pb-6">
+			<h3 className="text-4xl md:text-5xl font-bold pb-2 px-6 md:px-16 pt-10 md:pt-16 text-[#380D6B] font-['Antic_Didone']">
 				Our Facilities
 			</h3>
 			<div className="flex flex-col md:flex-row items-center justify-around pt-2 pb-10 px-6 md:px-16">
@@ -29,7 +35,7 @@ export default function Facilities() {
 					>
 						<div className="">
 							<Image
-								className="object-bottom"
+								className="object-bottom align-bottom"
 								src={facility.imageUrl}
 								alt={facility.name}
 								width={300}
@@ -37,10 +43,12 @@ export default function Facilities() {
 								quality={100}
 							/>
 						</div>
-                        <h4 className="text-2xl md:text-3xl font-bold text-[#380D6B] pb-5">
-				{facility.name}
-			</h4>
-            <p className="pb-8">{facility.text}</p>
+						<h4 className="text-3xl font-bold font-['Antic_Didone'] text-[#380D6B] py-5">
+							{facility.name}
+						</h4>
+						<p className="pb-8 font-['Antic_Didone']">
+							{facility.text}
+						</p>
 						<div className="">
 							<a
 								href={facility.buttonHref}

@@ -21,10 +21,12 @@ export default function Header() {
 						/>
 					</div>
 					<div className="flex flex-col items-center justify-center text-white text-center">
-						<h3 className="text-4xl md:text-7xl font-bold">
+						<h3 className="text-4xl md:text-7xl font-bold font-['Antic_Didone']">
 							YOUR GROWTH
 						</h3>
-						<span className="md:text-2xl">is Our ROAR</span>
+						<span className="md:text-2xl font-['Antic_Didone']">
+							is Our ROAR
+						</span>
 						<button className="mt-12 py-4 px-8 bg-fuchsia-600 rounded text-lg font-bold tracking-wider">
 							EXPLORE
 						</button>
