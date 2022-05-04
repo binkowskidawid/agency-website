@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function About() {
 	return (
 		<main
-			id="about"
 			className="l-header w-full pb-8 bg-top bg-gradient-to-b from-[#764ba2] to-[#667eea]
         scroll-smooth"
 		>
@@ -24,7 +23,7 @@ export default function About() {
 						doloremque eveniet saepe maxime officia quasi?
 					</p>
 					<div className="pl-8">
-						<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider">
+						<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider hover:bg-fuchsia-600 duration-200">
 							Read more...
 						</button>
 					</div>

@@ -27,7 +27,7 @@ export default function Header() {
 						<span className="md:text-2xl font-['Antic_Didone']">
 							is Our ROAR
 						</span>
-						<button className="mt-12 py-4 px-8 bg-fuchsia-600 rounded text-lg font-bold tracking-wider">
+						<button className="mt-12 py-4 px-8 bg-fuchsia-600 hover:bg-gray-100 hover:text-fuchsia-600 rounded text-lg font-bold tracking-wider duration-200">
 							EXPLORE
 						</button>
 					</div>

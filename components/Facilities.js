@@ -52,7 +52,7 @@ export default function Facilities() {
 						<div className="">
 							<a
 								href={facility.buttonHref}
-								className="mt-10 py-3 px-8 rounded border-2 border-gray-700 hover:bg-[#380D6B] text-sm text-gray-700 hover:text-gray-100 transition-shadow font-bold tracking-wider"
+								className="mt-10 py-3 px-8 rounded border-2 border-gray-700 hover:bg-[#380D6B] text-sm text-gray-700 hover:text-gray-100 duration-200 font-bold tracking-wider"
 							>
 								Read more...
 							</a>
