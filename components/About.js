@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
 	return (
@@ -23,9 +24,11 @@ export default function About() {
 						doloremque eveniet saepe maxime officia quasi?
 					</p>
 					<div className="pl-8">
-						<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider hover:bg-fuchsia-600 duration-200">
-							Read more...
-						</button>
+						<Link href="/about" passHref>
+							<button className="mt-10 py-3 px-8 rounded border-2 text-sm font-bold tracking-wider hover:bg-fuchsia-600 duration-200">
+								Read more...
+							</button>
+						</Link>
 					</div>
 				</div>
 				<div className="">

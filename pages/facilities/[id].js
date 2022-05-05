@@ -1,7 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+import Footer from "../../components/Footer";
+import Navigation from "../../components/Navigation";
 
-export default function Facilities() {
+export async function getServerSideProps(context) {
+	const { id } = context.params;
 	const facilitiesElement = [
 		{
 			imageUrl: "/images/classroom.png",
@@ -22,13 +24,26 @@ export default function Facilities() {
 			buttonHref: "science-zones"
 		}
 	];
+
+	const facility = facilitiesElement.find(
+		(facility) => facility.buttonHref === id
+	);
+	return {
+		props: {
+			facility
+		} // will be passed to the page component as props
+	};
+}
+
+export default function Facility({ facility }) {
 	return (
-		<section id="about" className="l-header w-full scroll-smooth pb-6">
-			<h3 className="text-4xl md:text-5xl font-bold pb-2 px-6 md:px-16 pt-10 md:pt-16 text-[#380D6B] font-['Antic_Didone']">
-				Our Facilities
-			</h3>
-			<div className="flex flex-col md:flex-row items-center justify-around pt-2 pb-10 px-6 md:px-16">
-				{facilitiesElement.map((facility) => (
+		<>
+			<Navigation />
+			<section id="about" className="l-header w-full scroll-smooth pb-6">
+				<h3 className="text-4xl md:text-5xl font-bold pb-2 px-6 md:px-16 pt-10 md:pt-16 text-[#380D6B] font-['Antic_Didone']">
+					Facility
+				</h3>
+				<div className="flex flex-col md:flex-row items-center justify-around pt-2 pb-10 px-6 md:px-16">
 					<div
 						className="flex-1 items-center justify-center text-center px-4 mb-8 md:mb-0"
 						key={facility.name}
@@ -49,19 +64,10 @@ export default function Facilities() {
 						<p className="pb-8 font-['Antic_Didone']">
 							{facility.text}
 						</p>
-						<div className="">
-							<Link
-								href={`/facilities/${facility.buttonHref}`}
-								passHref
-							>
-								<button className="mt-10 py-3 px-8 rounded border-2 border-gray-700 hover:bg-[#380D6B] text-sm text-gray-700 hover:text-gray-100 duration-200 font-bold tracking-wider">
-									Read more...
-								</button>
-							</Link>
-						</div>
 					</div>
-				))}
-			</div>
-		</section>
+				</div>
+			</section>
+			<Footer />
+		</>
 	);
 }
