@@ -54,7 +54,7 @@ export default function Facilities() {
 								href={`/facilities/${facility.buttonHref}`}
 								passHref
 							>
-								<button className="mt-10 py-3 px-8 rounded border-2 border-gray-700 hover:bg-[#380D6B] text-sm text-gray-700 hover:text-gray-100 duration-200 font-bold tracking-wider">
+								<button className="mt-2 py-3 px-8 rounded border-2 border-gray-700 hover:bg-[#380D6B] text-sm text-gray-700 hover:text-gray-100 duration-200 font-bold tracking-wider">
 									Read more...
 								</button>
 							</Link>
